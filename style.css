@@ -1,0 +1,395 @@
+* {
+  margin: 0px;
+}
+
+html {
+  font-size: 16px;
+  /* line-height: 1.8rem; */
+}
+
+h1, h2, h3, h4 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+body {
+  margin: 0px 10px;
+  font-family: 'Cormorant Garamond' serif;
+}
+
+img {
+  border-radius: 10px;
+}
+
+button {
+  background-color: purple;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px solid purple;
+  border-radius: 4px;
+  cursor: pointer
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(197, 2, 197);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  height: 20px;
+  width: 100%;
+  
+}
+
+header h2 {
+  padding-top: 30px;
+  padding-right: 10px;
+}
+
+
+nav {
+ flex: 1;
+}
+
+nav ul {
+  padding-top: 30px;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  
+  
+}
+
+#hero {
+  margin-top: 60px;
+  height: 500px;
+  background: linear-gradient(to bottom right, #ff6699, #ffcc00);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: bisque;
+}
+
+
+#services {
+  height: 500px;
+}
+
+
+.herocard {
+  
+  /* background-color: rgba(255, 228, 196, 0.2); */
+  border-radius: 15px;
+  width: 90% ;
+  height: 80%;
+  margin: 2em auto; 
+  padding-top: 8em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.herocard h1 {
+  font-size: 3rem;
+}
+
+#herop {
+  font-family: 'Cormorant Garamond' serif;
+}
+
+
+/* start css for PicText component */
+.pictext, .threecol {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  padding-top: 20px;
+  border-radius: 10px;
+}
+
+.imagebox {
+  width: 400px;
+  height: 420px;
+  /* border: 1px solid red; */
+  padding: 17px;
+}
+
+.imagebox img {
+  width: 400px;
+  flex-grow: 1;
+}
+
+
+
+.contentbox {
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 440px;
+  padding: 18px;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+
+.services {
+   background-color: #fcb3fc;
+   
+ }
+
+
+ /* Start css for testimonials triple column */
+ 
+ .column {
+  height: 270px;
+  width: 270px;
+  padding: 15px;
+  flex-grow: 1;
+  flex-shrink: 1;
+ }
+ 
+
+
+
+
+.formcontainer {
+  width: 90%;
+  /* margin: 50px auto; */
+  padding: 10px;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: purple;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px solid purple;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(197, 2, 197);
+  cursor: pointer;
+  transition: background-color 0.3s ease;;
+}
+
+.cont {
+  background-color: lightgray;
+}
+
+.contactcont {
+  padding-top: 2px;
+}
+
+footer {
+   background-color: black;
+  color: bisque;
+  font-family: 'Josefin-sans', sans-serif;
+  padding: 40px;
+  margin-top: 20px;
+
+}
+
+#footcontain {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 350px;
+  border-bottom: 1px solid bisque;
+ }
+
+#foottalk, #footform, #follow {
+  width: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 20px;
+  /* border: 1px dotted red; */
+  
+}
+
+#foottalk ul {
+  list-style-type: none;
+  padding: 20px;
+  font-size: .85rem;
+}
+
+#foottalk li {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid bisque;
+  box-sizing: border-box;
+  background-color: black; 
+}
+
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.footercaps {
+  margin-bottom: 20px;
+}
+
+#smbuttons img {
+  height: 50px;
+}
+
+#copywrite {
+  padding-top: 10px;
+}
+
+
+
+@media screen and (max-width: 320px) {
+
+  #hero {
+    height: 390px;
+  }
+  
+  .herocard {
+    padding-top: 3.5em;
+  }
+
+  .imagebox {
+    display: none;
+  } 
+
+  #herop {
+    display: none;
+  }
+  
+  .pictext {
+    height: 655px;
+    margin-bottom: 10px;
+  }
+  
+  .aboutus {
+    height: 600px;
+  }
+  
+  #footcontain {
+    height: 600px;
+  }
+}
+
+
+@media screen and (min-width 320px max-width: 375px) {
+  .imagebox {
+    display: none;
+  } 
+  
+  .herocard {
+    padding-top: 2.6rem;
+  }
+  
+  .pictext {
+    height: 540px;
+    margin-bottom: 0px;
+  }
+  
+  .column {
+    height: 230px;
+  }
+  
+  #footcontain {
+    height: 530px;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  
+  #hero {
+    height: 455px;
+  }
+  
+  .herocard {
+    padding-top: 2.5rem;
+  }
+  
+  .imagebox {
+    height: 375px;
+  }
+
+  .imagebox img {
+    width: 375px;
+  }
+  
+  .column {
+    height: 200px;
+  }
+  
+  #footcontain {
+    height: 530px;
+  }
+
+} 
+
+@media screen and (max-width: 768px) {
+  
+  .imagebox {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imagebox img {
+    width: 100%;
+  }
+  
+.contentbox {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.threecol {
+  height: 500px;
+}
+
+#footcontain {
+  height: 480px;
+}
+
+} 
